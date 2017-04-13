@@ -11785,6 +11785,8 @@ with pkgs;
       virtualbox = pkgs.virtualboxHardened;
     };
 
+    hidapplepatched = callPackage ../os-specific/linux/hidapplepatched { };
+
     wireguard = callPackage ../os-specific/linux/wireguard { };
 
     x86_energy_perf_policy = callPackage ../os-specific/linux/x86_energy_perf_policy { };
